@@ -7,13 +7,19 @@ import App from './App.jsx'
 //   <StrictMode><App /></StrictMode>
 // )
 
-const root = createRoot(document.getElementById("root"))
-root.render(
-    <div>
-      <header>
-        <img src="src/assets/react.svg" width="40px" alt="React logo" />
-      </header>
-      <main>
+const root = createRoot(document.getElementById('root'))
+
+function Header() {
+  return (
+    <header>
+      <img src="src/assets/react.svg" width="40px" alt="React logo" />
+    </header>
+  )
+}
+
+function MainContent() {
+  return (
+    <main>
         <h1> Fun Facts about React!</h1>
           <ul>
             <li> Was first released in 2013 </li>
@@ -24,8 +30,26 @@ root.render(
             <li> Was first released in 2013 </li>
           </ul>
       </main>
-      <footer>
-        © 2025 Fun Facts About React. All rights reserved.
-      </footer>
+  )
+}
+
+function Footer() {
+  return (
+    <footer>
+      © 2025 Fun Facts About React. All rights reserved.
+    </footer>
+  )
+}
+
+function Page() {
+  return (
+    <div>
+      <Header />
+      <MainContent />
+      <Footer />
     </div>
+)
+}
+root.render(
+    <Page />
 )
