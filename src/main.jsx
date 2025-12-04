@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { Fragment } from 'react'
 import './index.css'
 import App from './App.jsx'
 
@@ -43,11 +44,11 @@ function Footer() {
 
 function Page() {
   return (
-    <div>
+    <Fragment>
       <Header />
       <MainContent />
       <Footer />
-    </div>
+    </Fragment>
 )
 }
 root.render(
