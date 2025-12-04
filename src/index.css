@@ -53,6 +53,18 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-logo {
+  width: 50px;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
